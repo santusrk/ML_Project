@@ -16,7 +16,8 @@ from src.utils import save_object
 
 @dataclass
 class DataTransformationConfig:
-    preprocessor_obj_file_path=os.path.join('artifacts',"proprocessor.pkl")
+    base_path = '/Users/srikantnayak/Downloads/computer_vision_projects/MLproject/ML_Project/artifacts'
+    preprocessor_obj_file_path=os.path.join(base_path,"proprocessor.pkl")
 
 class DataTransformation:
     def __init__(self):
